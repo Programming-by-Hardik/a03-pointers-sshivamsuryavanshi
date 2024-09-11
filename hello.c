@@ -1,7 +1,4 @@
-[9:15 PM, 8/29/2024] Shivam: tomorrow
-[9:16 PM, 8/29/2024] Tridev Chahar: all right
-[8:23 PM, 9/11/2024] Shivam: pointer ka code send karna bhai
-[8:26 PM, 9/11/2024] Tridev Chahar: // pointers_assignment.c
+// pointers_assignment.c
 // This program implements three functions using pointers: swap, findMax, and reverseArray.
 
 #include <stdio.h>
