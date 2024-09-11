@@ -1,4 +1,7 @@
-// pointers_assignment.c
+[9:15 PM, 8/29/2024] Shivam: tomorrow
+[9:16 PM, 8/29/2024] Tridev Chahar: all right
+[8:23 PM, 9/11/2024] Shivam: pointer ka code send karna bhai
+[8:26 PM, 9/11/2024] Tridev Chahar: // pointers_assignment.c
 // This program implements three functions using pointers: swap, findMax, and reverseArray.
 
 #include <stdio.h>
@@ -45,6 +48,10 @@ int main() {
 // Function to swap two integers using pointers
 void swap(int *a, int *b) {
     //Write the function description
+int temp = *a;
+    *a = *b;
+    *b = temp;
+
 
 
 
@@ -57,6 +64,13 @@ void swap(int *a, int *b) {
 // Function to find the maximum value in an array using pointers
 int findMax(int *arr, int length) {
     //Write the fucntion description 
+ int max = *arr;
+    for (int i = 1; i < length; i++) {
+        if (*(arr + i) > max) {
+            max = *(arr + i);
+        }
+    }
+    return max;
 
 
 
@@ -70,6 +84,15 @@ int findMax(int *arr, int length) {
 // Function to reverse an array using pointers
 void reverseArray(int *arr, int length) {
     //Write the function description 
+ int *start = arr;
+    int *end = arr + length - 1;
+    while (start < end) {
+        int temp = *start;
+        *start = *end;
+        *end = temp;
+        start++;
+        end--;
+    }
 
 
 
